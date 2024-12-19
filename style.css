@@ -1,73 +1,57 @@
-table {
-    /* border-collapse: collapse;
-    width: 100%;
-    text-align: center; */
-    width: 200px;
-    height: 300px;
-    text-align: center;
-    border: 5px solid green;
-    background-color: antiquewhite;
- }
-
- th, td {
-    border: 1px solid red;
-   
- }
- th{
-    text-align: end;
-    background-color: lightgreen;
-    font-weight: 10px;
- }
- td:hover {
-    background-color: lightcoral;
-    color: white;
- }
- #clear{
-    color: red;
-    font-weight: bold;
- }
- #caption{
-    
-    font-weight: bolder;
-    color: lightcoral;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    font-size: large;
-    text-shadow: 1px 1px;
- }
- .operations{
-    background-color: palevioletred;
- }
- ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-    border-right: 1px solid #bbb;
-  }
-  
-  li:last-child {
-    border-right: none;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
-  
+body {
+   font-family: Arial, sans-serif;
+   background-color: #333;
+   color: #fff;
+   margin: 0;
+   padding: 0;
+}
+.container {
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #444;
+}
+.header {
+   display: flex;
+   align-items: center;
+   padding-bottom: 20px;
+   border-bottom: 1px solid #555;
+}
+.header img {
+   border-radius: 50%;
+   margin-right: 20px;
+}
+.header h1 {
+   margin: 0;
+}
+.section {
+   margin-top: 20px;
+}
+.section h2 {
+   border-bottom: 1px solid #555;
+   padding-bottom: 10px;
+}
+.section p {
+   margin: 10px 0;
+}
+.skills {
+   display: flex;
+   flex-wrap: wrap;
+}
+.skill {
+   width: 50%;
+   margin-bottom: 10px;
+}
+.skill-bar {
+   height: 10px;
+   background-color: #555;
+   border-radius: 5px;
+   overflow: hidden;
+}
+.skill-bar div {
+   height: 100%;
+   border-radius: 5px;
+}
+.programming .skill-bar div { background-color: #4caf50; }
+.graphic .skill-bar div { background-color: #2196f3; }
+.language .skill-bar div { background-color: #ff9800; }
